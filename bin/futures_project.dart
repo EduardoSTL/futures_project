@@ -13,7 +13,7 @@ void main() {
   print('Fin del programa');
 }
 
-Future<String> httpGet(String url){
+Future<String> httpGet(String url){               //! funcion anonima: ()
   return Future.delayed(const Duration(seconds: 1), (){
     throw 'Error en la peticion Http';
     //* return 'Respuesta de la peticion http'
