@@ -3,6 +3,7 @@ void main() async {
   //* permitiendo que otras operaciones continúen mientras se espera que se complete una tarea específica
   try{
     //* await esperará hasta que la función httpGet se complete antes de continuar
+    //* await se utiliza antes de llamar a una función que devuelve un objeto de tipo Future
     final value = await httpGet('https:google.com');
     print(value);
   } catch (err){
