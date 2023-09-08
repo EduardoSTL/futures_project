@@ -16,6 +16,7 @@ void main() {
 }
 
 //* Future maneja los errores de los request a servidor>puerto>database
+//! esta funcion simula una solicitud HTTP
 Future<String> httpGet(String url){               //! funcion anonima: ()
   //* con delay manejamos la peticion y su retraso
   return Future.delayed(const Duration(seconds: 1), (){
